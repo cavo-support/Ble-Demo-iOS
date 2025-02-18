@@ -159,7 +159,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property(nonatomic, strong) NSArray *deviceStatusTypeArr;
 
-// 芯片类型 chip type
+// 芯片类型 chip type 设备芯片类型 0:C(正常芯片) 1:D(VD版本)
 @property(nonatomic, assign) int chipType;
 
 //芯片平台 0：rtk 、 100：联睿微

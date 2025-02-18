@@ -187,9 +187,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy) JWBlePulseDataCallBack pulseDataCallBack;
 
 /**
- 脉冲数据回调 sauna data callback
+ 桑拿数据回调 sauna data callback
  */
 @property(nonatomic, copy) JWBleSaunaDataCallBack saunaDataCallBack;
+
+/**
+ 心率体动监测数据回调 HRMovement data callback
+ */
+@property(nonatomic, copy) JWBleHrMovementDataCallBack hrMovementDataCallBack;
 
 //Opus数据回调 -- Opus数据回调
 @property(nonatomic, copy) JWBleOpusDataCallBack opusDataCallBack;

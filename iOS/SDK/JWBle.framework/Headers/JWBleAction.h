@@ -37,6 +37,11 @@
 + (void)jwDisConnect;
 
 /**
+ 刷新设备功能列表 Refresh device function list
+ */
++ (void)sysDeviceFuncAction;
+
+/**
  断开连接，但是不解绑  Disconnect, but do not unbind
  */
 + (void)jwDisConnectNotUnBond;

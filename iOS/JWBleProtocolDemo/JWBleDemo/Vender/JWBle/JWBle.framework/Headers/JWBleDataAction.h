@@ -62,6 +62,8 @@
  */
 + (void)jwGetStepDataByYYYYMMDDStr:(NSString *)yyyymmddStr callBack:(void (^)(NSArray *dataArr))callBack;
 
++ (void)jwGetStepDataByStartT:(NSInteger)startT endT:(NSInteger)endT callBack:(void (^)(NSArray *dataArr))callBack;
+
 /**
  获取某天的计步数据
 
@@ -453,6 +455,20 @@
  */
 + (void)jwGetSaunaDataByYYYYDDStr:(NSString *)yyyymmddStr callBack:(void (^)(NSArray *dataArr))callBack;
 + (void)jwGetSaunaDataByStartT:(NSInteger)startT endT:(NSInteger)endT callBack:(void (^)(NSArray *dataArr))callBack;
+
+/**
+ Get device HrMovement data
+   The date obtained by @param yyyymmddStr such as: 20180911
+   @param callBack
+   dataArr:
+   [
+      {
+        ....
+      }
+   ]
+ */
++ (void)jwGetHrMovementDataByYYYYDDStr:(NSString *)yyyymmddStr callBack:(void (^)(NSArray *dataArr))callBack;
++ (void)jwGetHrMovementDataByStartT:(NSInteger)startT endT:(NSInteger)endT callBack:(void (^)(NSArray *dataArr))callBack;
 
 /**
  Get device HrvRmssd data

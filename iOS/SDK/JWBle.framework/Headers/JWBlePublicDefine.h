@@ -532,6 +532,11 @@ typedef void (^JWBlePulseDataCallBack)(int status, int length ,int timestamp, in
 typedef void (^JWBleSaunaDataCallBack)(int status, int length ,int time, int hr, int tem, int label, int move);
 
 /**
+ 心率体动监测数据回调 HR Movement data callback
+ **/
+typedef void (^JWBleHrMovementDataCallBack)(int time, int hr, int tem, int label, int move);
+
+/**
  尿酸状态改变回调 uricAcid status callback
  
  @param open 是否开启（get = false 生效）

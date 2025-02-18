@@ -32,6 +32,7 @@
 #import "CustomSetPluseViewController.h"
 #import "SaunaViewController.h"
 #import "V7_GT7D_ActionListViewController.h"
+#import "HRMovementDataViewController.h"
 
 #import "ScanViewController.h"
 #import "SyncTimeViewController.h"
@@ -145,6 +146,9 @@
    } else if ([actionStr isEqualToString:@"HRV-RMSSD"]) {
        [self.navigationController pushViewController:[HRVRmssdViewController new] animated:true];
    }
+   else if ([actionStr isEqualToString:@"心率体动监测数据"]) {
+       [self.navigationController pushViewController:[HRMovementDataViewController new] animated:true];
+   }
 }
 
 
@@ -152,6 +156,7 @@
 - (NSArray *)functionArr {
     if (!_functionArr) {
         _functionArr = @[
+            @"心率体动监测数据",
             @"HRV-RMSSD",
             @"蓝牙搜索",
             @"设备连接",
